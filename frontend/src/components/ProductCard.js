@@ -781,6 +781,28 @@ const StyledWrapper = styled.div`
   .card .content .service-info-bar:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); }
 
   /* شريط الثقة */
+  /* حركة دخول متدرجة لشريط الثقة (staggered entrance) */
+  @keyframes trust-stagger-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* الحالة الابتدائية قبل الحركة */
+  .card .content .trust-bar .trust-item .trust-icon,
+  .card .content .trust-bar .trust-item .trust-label {
+    opacity: 0;
+    transform: translateY(8px);
+    will-change: transform, opacity;
+  }
+  /* التدرّج الزمني لكل عنصر (أيقونة ثم النص) */
+  .card .content .trust-bar .trust-item:nth-child(1) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 60ms; }
+  .card .content .trust-bar .trust-item:nth-child(1) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 120ms; }
+  .card .content .trust-bar .trust-item:nth-child(2) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 180ms; }
+  .card .content .trust-bar .trust-item:nth-child(2) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 240ms; }
+  .card .content .trust-bar .trust-item:nth-child(3) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 300ms; }
+  .card .content .trust-bar .trust-item:nth-child(3) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 360ms; }
+  .card .content .trust-bar .trust-item:nth-child(4) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 420ms; }
+  .card .content .trust-bar .trust-item:nth-child(4) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 480ms; }
+
   .card .content .trust-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; align-items: center; padding: 0.1rem 0; margin: 0; font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif; background: none; border: none; box-shadow: none; }
   .card .content .trust-bar .trust-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 5px 3px; border-radius: 10px; min-height: 40px; }
   .card .content .trust-bar .trust-item:focus-visible { outline: 2px solid #2563EB; outline-offset: 2px; }
