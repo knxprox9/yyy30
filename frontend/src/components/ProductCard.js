@@ -187,10 +187,27 @@ const ProductCard = () => {
             {/* معاينة الخدمات المتاحة */}
             <div className="color-size-container">
               <div className="colors">
-                <ul className="colors-container">
-                  {SERVICES.slice(0, 4).map(service => (
-                    <ServiceItem key={service.id} service={service} />
-                  ))}
+                <ul className="colors-container" aria-label="معاينة العلامات">
+                  <li className="payment-card visa" aria-label="Visa">
+                    <div className="card-icon premium-card visa">
+                      <span className="brand-icon" aria-hidden="true"><FaCcVisa /></span>
+                    </div>
+                  </li>
+                  <li className="payment-card mastercard" aria-label="Mastercard">
+                    <div className="card-icon premium-card mastercard">
+                      <span className="brand-icon" aria-hidden="true"><FaCcMastercard /></span>
+                    </div>
+                  </li>
+                  <li className="payment-card googleplay" aria-label="Google Play">
+                    <div className="card-icon premium-card googleplay">
+                      <span className="brand-icon" aria-hidden="true"><SiGoogleplay /></span>
+                    </div>
+                  </li>
+                  <li className="payment-card roblox" aria-label="Roblox">
+                    <div className="card-icon premium-card roblox">
+                      <span className="brand-icon" aria-hidden="true"><SiRoblox /></span>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
