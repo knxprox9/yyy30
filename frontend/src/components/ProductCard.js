@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import styled from 'styled-components';
 import { FiTruck, FiShield, FiGift, FiX } from 'react-icons/fi';
+import { FaCcVisa, FaCcMastercard } from 'react-icons/fa';
+import { SiGoogleplay, SiRoblox } from 'react-icons/si';
 
 import ToggleButton from './ToggleButton';
 
