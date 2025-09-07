@@ -641,7 +641,7 @@ const StyledWrapper = styled.div`
   /* معاينة العلامات - توحيد الخلفية وألوان الشعارات */
   .card .content .color-size-container .colors .colors-container .premium-card {
     background: #F5F7FB !important;
-    border: 0.5px solid #1E3A8A !important; /* كحلي أرفع */
+    border: 0.35px solid #9CA3AF !important; /* رمادي أرفع */
     box-shadow:
       0 2px 6px rgba(0,0,0,0.06),
       inset 0 1px 0 rgba(255,255,255,0.35) !important;
