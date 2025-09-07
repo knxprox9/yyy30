@@ -659,7 +659,7 @@ const StyledWrapper = styled.div`
   .premium-card {
     width: 40px !important;
     height: 26px !important;
-    border-radius: 7px !important;
+    border-radius: 6px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
