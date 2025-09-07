@@ -657,8 +657,8 @@ const StyledWrapper = styled.div`
 
   /* تصميم بطاقات الخدمة المميزة */
   .premium-card {
-    width: 42px !important;
-    height: 28px !important;
+    width: 40px !important;
+    height: 26px !important;
     border-radius: 7px !important;
     display: inline-flex !important;
     align-items: center !important;
