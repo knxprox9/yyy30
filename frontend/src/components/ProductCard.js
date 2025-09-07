@@ -678,6 +678,7 @@ const StyledWrapper = styled.div`
   .premium-card .brand-icon { display: inline-flex; align-items: center; justify-content: center; }
   .premium-card .brand-icon svg { width: 22px; height: 22px; }
   .premium-card .brand-img { width: 22px; height: 22px; object-fit: contain; display: block; }
+  .premium-card.googleplay .brand-img { width: 18px; height: 18px; }
 
 
   /* ألوان بطاقات الخدمة */
