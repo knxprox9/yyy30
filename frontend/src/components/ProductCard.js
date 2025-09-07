@@ -204,7 +204,7 @@ const ProductCard = () => {
                   </li>
                   <li className="payment-card roblox" aria-label="Roblox">
                     <div className="card-icon premium-card roblox">
-                      <span className="brand-icon" aria-hidden="true"><SiRoblox /></span>
+                      <img className="brand-img" src="/assets/roblox-user.png" alt="Roblox" />
                     </div>
                   </li>
                 </ul>
