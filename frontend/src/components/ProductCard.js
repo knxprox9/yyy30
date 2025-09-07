@@ -189,7 +189,7 @@ const ProductCard = () => {
                 <ul className="colors-container" aria-label="معاينة العلامات">
                   <li className="payment-card visa" aria-label="Visa">
                     <div className="card-icon premium-card visa">
-                      <span className="brand-icon" aria-hidden="true"><FaCcVisa /></span>
+                      <span className="brand-icon" aria-hidden="true"><SiVisa /></span>
                     </div>
                   </li>
                   <li className="payment-card mastercard" aria-label="Mastercard">
