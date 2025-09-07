@@ -865,6 +865,21 @@ const StyledWrapper = styled.div`
   .card .content .trust-bar .trust-item:hover .trust-icon::after,
   .card .content .trust-bar .trust-item:focus-visible .trust-icon::after { opacity: 0.5; filter: blur(7px); }
 
+  /* حركة دخول متدرجة لشريط الثقة (staggered entrance) */
+  @keyframes trust-stagger-up { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: translateY(0);} }
+  /* الحالة الابتدائية قبل الحركة */
+  .card .content .trust-bar .trust-item .trust-icon,
+  .card .content .trust-bar .trust-item .trust-label { opacity: 0; transform: translateY(8px); will-change: transform, opacity; }
+  /* التدرّج الزمني لكل عنصر (أيقونة ثم النص) */
+  .card .content .trust-bar .trust-item:nth-child(1) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 60ms; }
+  .card .content .trust-bar .trust-item:nth-child(1) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 120ms; }
+  .card .content .trust-bar .trust-item:nth-child(2) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 180ms; }
+  .card .content .trust-bar .trust-item:nth-child(2) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 240ms; }
+  .card .content .trust-bar .trust-item:nth-child(3) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 300ms; }
+  .card .content .trust-bar .trust-item:nth-child(3) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 360ms; }
+  .card .content .trust-bar .trust-item:nth-child(4) .trust-icon { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 420ms; }
+  .card .content .trust-bar .trust-item:nth-child(4) .trust-label { animation: trust-stagger-up 420ms ease-out forwards; animation-delay: 480ms; }
+
   /* انيميشن النقاط الجذابة */
   @keyframes circle-bounce { 0% { transform: scale(1); } 50% { transform: scale(1.3); } 100% { transform: scale(1); } }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
