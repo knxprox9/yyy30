@@ -650,7 +650,7 @@ const StyledWrapper = styled.div`
     width: 20px; height: 20px;
   }
   /* ألوان الشعار الرسمية */
-  .card .content .color-size-container .colors .colors-container .premium-card.visa .brand-icon svg { color: #1A1F71; }
+  .card .content .color-size-container .colors .colors-container .premium-card.visa .brand-img { width: 20px; height: 20px; object-fit: contain; }
   .card .content .color-size-container .colors .colors-container .premium-card.mastercard .brand-icon svg { color: #EB001B; }
   .card .content .color-size-container .colors .colors-container .premium-card.googleplay .brand-icon svg { color: #34A853; }
   .card .content .color-size-container .colors .colors-container .premium-card.roblox .brand-icon svg { color: #E2231A; }
