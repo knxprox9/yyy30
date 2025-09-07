@@ -199,7 +199,7 @@ const ProductCard = () => {
                   </li>
                   <li className="payment-card googleplay" aria-label="Google Play">
                     <div className="card-icon premium-card googleplay">
-                      <span className="brand-icon" aria-hidden="true"><SiGoogleplay /></span>
+                      <img className="brand-img" src="/assets/google-play-user.png" alt="Google Play" />
                     </div>
                   </li>
                   <li className="payment-card roblox" aria-label="Roblox">
