@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FiTruck, FiShield, FiGift, FiX } from 'react-icons/fi';
 import { SiVisa, SiMastercard, SiGoogleplay, SiRoblox } from 'react-icons/si';
 
