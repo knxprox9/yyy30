@@ -194,7 +194,7 @@ const ProductCard = () => {
                   </li>
                   <li className="payment-card mastercard" aria-label="Mastercard">
                     <div className="card-icon premium-card mastercard">
-                      <span className="brand-icon" aria-hidden="true"><SiMastercard /></span>
+                      <img className="brand-img" src="/assets/mastercard-user.png" alt="Mastercard" />
                     </div>
                   </li>
                   <li className="payment-card googleplay" aria-label="Google Play">
