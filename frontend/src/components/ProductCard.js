@@ -677,6 +677,7 @@ const StyledWrapper = styled.div`
   /* ضبط حجم الأيقونة الرسمية داخل البطاقة */
   .premium-card .brand-icon { display: inline-flex; align-items: center; justify-content: center; }
   .premium-card .brand-icon svg { width: 22px; height: 22px; }
+  .premium-card .brand-img { width: 22px; height: 22px; object-fit: contain; display: block; }
 
 
   /* ألوان بطاقات الخدمة */
