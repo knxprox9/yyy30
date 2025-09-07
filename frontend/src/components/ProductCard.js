@@ -647,11 +647,8 @@ const StyledWrapper = styled.div`
     align-items: center !important;
     justify-content: center !important;
     position: relative !important;
-    cursor: pointer !important;
+    cursor: default !important;
     transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.22s ease !important;
-    font-weight: 700 !important;
-    font-size: 9px !important;
-    letter-spacing: 0.5px !important;
     box-shadow: 
       0 3px 10px rgba(0, 0, 0, 0.18),
       0 2px 4px rgba(0, 0, 0, 0.12),
@@ -659,6 +656,11 @@ const StyledWrapper = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.14) !important;
     overflow: hidden !important;
   }
+
+  /* ضبط حجم الأيقونة الرسمية داخل البطاقة */
+  .premium-card .brand-icon { display: inline-flex; align-items: center; justify-content: center; }
+  .premium-card .brand-icon svg { width: 22px; height: 22px; }
+
 
   /* ألوان بطاقات الخدمة */
   .premium-card.visa {
