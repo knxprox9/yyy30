@@ -638,6 +638,23 @@ const StyledWrapper = styled.div`
     margin-top: 0.2rem; 
   }
 
+  /* معاينة العلامات - توحيد الخلفية وألوان الشعارات */
+  .card .content .color-size-container .colors .colors-container .premium-card {
+    background: #F5F7FB !important;
+    border: 1px solid rgba(0,0,0,0.06) !important;
+    box-shadow:
+      0 2px 6px rgba(0,0,0,0.10),
+      inset 0 1px 0 rgba(255,255,255,0.35) !important;
+  }
+  .card .content .color-size-container .colors .colors-container .premium-card .brand-icon svg {
+    width: 20px; height: 20px;
+  }
+  /* ألوان الشعار الرسمية */
+  .card .content .color-size-container .colors .colors-container .premium-card.visa .brand-icon svg { color: #1A1F71; }
+  .card .content .color-size-container .colors .colors-container .premium-card.mastercard .brand-icon svg { color: #EB001B; }
+  .card .content .color-size-container .colors .colors-container .premium-card.googleplay .brand-icon svg { color: #34A853; }
+  .card .content .color-size-container .colors .colors-container .premium-card.roblox .brand-icon svg { color: #E2231A; }
+
   /* تصميم بطاقات الخدمة المميزة */
   .premium-card {
     width: 42px !important;
